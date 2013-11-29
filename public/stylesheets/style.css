@@ -1,0 +1,88 @@
+body {
+  margin: auto;
+  background: #f7f7f7;
+  color: #333;
+  width: 90%;
+  text-align: center;
+}
+.sticker {
+  font-style: normal;
+  font-family: Android Emoji, Symbola, Apple Color Emoji;
+}
+.stickers__sticker {
+  font-size: 4em;
+  line-height: 1.2;
+  margin: 0.1em 0;
+  padding: 0;
+  border-radius: 15em;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: inline-block;
+  cursor: pointer;
+}
+.modal-panel {
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-bottom: 5px solid #acf;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  transition: opacity 0.7s ease, top 0.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-panel.is-shown {
+  top: 25%;
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-panel__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  background: #c99;
+  border: #a77;
+  font-style: normal;
+  color: #fee;
+  cursor: pointer;
+}
+.modal-panel__close:before {
+  content: "✖";
+}
+.sticker-editor__pane {
+  display: inline-table;
+  vertical-align: top;
+  width: 40%;
+  white-space: normal;
+}
+.sticker-editor__content {
+  width: 90%;
+  margin: 2em 0;
+  white-space: nowrap;
+}
+.sticker-editor__row {
+  display: table-row;
+  line-height: 2em;
+}
+.sticker-editor__h3 {
+  font-family: roboto, helvetica neue;
+  font-weight: 100;
+  color: #666;
+  text-align: left;
+  display: table-cell;
+  width: 0;
+}
+.sticker-editor__color {
+  display: table-cell;
+  width: 100%;
+}
+.sticker-editor__sticker {
+  font-size: 10em;
+  border-radius: 100%;
+}

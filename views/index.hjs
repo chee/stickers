@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<title>let's play: stickers!</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+	<div class="stickers" id="stickers">
+		{{#stickers}}
+		<i style="background: {{background}}; color: {{foreground}};" id="{{id}}" class="stickers__sticker sticker js-sticker">
+			{{id}}
+		</i>
+		{{/stickers}}
+	</div>
+	<div id="sticker-editor" class="js-modal modal-panel">
+		<i class="js-close modal-panel__close"></i>
+		<div class="sticker-editor__content">
+			<figure class="sticker-editor__sticker-pane sticker-editor__pane">
+				<i class="sticker js-sticker sticker-editor__sticker">🍷</i>  
+			</figure>
+			<aside class="sticker-editor__editor sticker-editor__pane">
+				<div class="sticker-editor__row">
+					<h3 class="sticker-editor__h3">Foreground</h3>
+					<input type="color" class="sticker-editor__color js-color--foreground">
+				</div>
+				<div class="sticker-editor__row">
+					<h3 class="sticker-editor__h3">Background</h3>
+					<input type="color" class="sticker-editor__color js-color--background">
+				</div>
+			</aside>
+		</div>
+	</div>
+	<script src="/javascripts/javascript.js"></script>
+</body>
+</html>

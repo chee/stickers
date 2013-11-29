@@ -1,0 +1,12 @@
+<div id="sticker-editor">
+	<div class="sticker-editor__content">
+      <figure class="sticker-editor__sticker">
+      </figure>
+      <aside class="sticker-editor__editor">
+          <h3 class="sticker-editor__h3">Foreground</h3>
+          <input type="color" class="sticker-editor__color js-color--foreground">
+          <h3 class="sticker-editor__h3">Background</h3>
+          <input type="color" class="sticker-editor__color js-color--background">
+      </aside>
+  </div>
+</div>
