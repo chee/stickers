@@ -105,7 +105,7 @@ socket.on('request', function(request) {
 				});
 
 			} catch (tantrum) {
-				throw tantrum;
+				console.error(tantrum);
 			}
 		});
 	});
